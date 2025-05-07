@@ -1,0 +1,60 @@
+-----------------------------------
+
+Para o corpo (<body>):
+
+    - "font-family" FEITO:
+        "font-family: Arial, Helvetica, sans-serif;"
+
+    - "text-align" FEITO:
+        "text-align: left;"
+
+    - "background-color" FEITO:
+        "background-color: black;"
+
+    - Tag IMG com SRC e ALT FEITO:
+        "
+        <img class="img-name-game" id="img-name-game-1" src="src/img/Star-Wars-Jedi-Fallen-Order.avif" alt="Star Wars Jedi: Fallen Order">
+
+        <img class="img-name-game" id="img-name-game-2" src="src/img/Star-Wars-Jedi-Survivor.avif" alt="Star Wars Jedi: Survivor">
+        "
+
+-----------------------------------
+
+Para o Título (<h1>):
+    - "color" FEITO:
+        "
+        color: hsl(240,100%,90%);
+        color: hsl(30,100%,90%);
+        "
+
+-----------------------------------
+
+Para os parágrafos (<p>):
+    - "color" FEITO:
+        "color: whitesmoke;"
+    
+    - "font-size" FEITO:
+        "font-size: 1em;"
+
+    - "margin" FEITO:
+        "
+        margin: 0px;
+        margin-bottom: 15px;
+        "
+
+    - "font-family" FEITO:
+        "font-family: Arial, Helvetica, sans-serif;"
+
+    - "font-weight" FEITO:
+        "font-weight: normal;"
+
+    - "font-style" FEITO:
+        "font-style: normal;"
+    
+    - "text-decoration" FEITO:
+        "text-decoration: none;"
+
+    - "text-align" FEITO:
+        "text-align: justify;"
+
+-----------------------------------

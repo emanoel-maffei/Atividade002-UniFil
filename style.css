@@ -1,0 +1,188 @@
+* {
+    cursor: default;
+
+    z-index: 1;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    background-color: black;
+    color: white;
+    text-align: left;
+    height: 100vh;
+    margin: 0px;
+
+    overflow: hidden;
+
+    user-select: none;
+}
+
+img.img-name-game {
+    position: absolute;
+    left: 50%;
+
+    width: 80%;
+    max-width: 650px;
+    opacity: 0;
+
+    animation-name: show;
+    animation-timing-function: ease-in;
+    animation-duration: 9.5s;
+    animation-delay: 500ms;
+}
+
+@keyframes show {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+img#img-name-game-1 {
+    top: 20%;
+    transform: translate(-50%, -20%);
+}
+
+img#img-name-game-2 {
+    top: 80%;
+    transform: translate(-50%, -80%);
+}
+
+/* lightsaber */
+
+video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    /* width: 100%; */
+    height: 100%;
+    transition: 5s;
+
+    z-index: 0;
+}
+
+video#video-lightsaber {
+    display: none;
+
+    z-index: 0;
+}
+
+section.section {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+
+    background-color: hsla(0, 0%,0%, 0); 
+    text-align: center;
+    width: 40%;
+    height: 90%;
+    padding: 20px;
+    opacity: 1;
+    transition: 2.5s;
+
+    overflow: auto;
+}
+
+section.section:hover {
+    background-color: hsla(0, 0%,0%, 0.5);
+}
+
+section.section::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+
+section.section::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+}
+
+section#fallen-order {
+    direction: ltr; /* right to left */
+
+    left: 2.5%;
+    transform: translate(-2.5%, -50%); 
+}
+
+section#fallen-order::-webkit-scrollbar {
+    direction: rtl;
+}
+
+section#survivor {
+    direction: ltr; /* left to right */
+
+    left: 97.5%;
+    transform: translate(-97.5%, -50%);
+}
+
+section#fallen-order::-webkit-scrollbar-thumb, section#survivor::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+h1 {
+    letter-spacing: 8px;
+}
+
+h1#fallen-order {
+    color: hsl(240, 100%, 90%);
+}
+
+h1#survivor {
+    color: hsl(30, 100%, 90%);
+}
+
+h2 {
+    letter-spacing: 5px;
+}
+
+hr {
+    width: 80%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    
+    color: whitesmoke;
+    text-align: justify;
+    text-decoration: none; 
+    /*
+    text-decoration:
+    none, underline, overline e line-through
+    */
+    margin: 0px;
+    margin-bottom: 15px; 
+}
+
+section.section > video {
+    position: static;
+    left: 0;
+    top: 0;
+    transform: translate(0%, 0%);
+
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 20px hsla(240, 100%, 100%, 0.1);
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: hsla(0, 0%, 0%, 0.25);
+    margin-top: 15px;
+}
+
+/* section#survivor > video {
+    border-radius: 5%;
+} */
